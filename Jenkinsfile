@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/priyamudhole9/my-project.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'docker build -t my-app .'
